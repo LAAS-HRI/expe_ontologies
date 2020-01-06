@@ -1,0 +1,12 @@
+<launch>
+  <arg name="language" default="en"/>
+  <arg name="intern_file" default="none"/>
+  <arg name="files" default="
+    $(find expe_ontologies)/common_ground/expe_ontology.owl
+    $(find expe_ontologies)/experimentations/examples/complete_perception.owl
+    "/>
+
+  <node name="ontologenius_core" pkg="ontologenius" type="ontologenius" output="screen" args="-l $(arg language) -i $(arg intern_file) $(arg files)"> </node>
+  <node name="ontologenius_rest" pkg="ontologenius" type="REST.py" output="screen"> </node>
+  <node name="ontologenius_gui" pkg="ontologenius" type="ontoloGUI" output="screen"> </node>
+</launch>
