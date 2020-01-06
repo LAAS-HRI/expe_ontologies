@@ -69,6 +69,15 @@
 
 
 
+    <!-- complete_perception#shelf_2 -->
+
+    <owl:NamedIndividual rdf:about="complete_perception#shelf_2">
+        <rdf:type rdf:resource="expe_ontologies#Shelf"/>
+        <expe_ontologies:hasColor rdf:resource="expe_ontologies#wooden"/>
+    </owl:NamedIndividual>
+
+
+
     <!-- simple_perception#box_1 -->
 
     <owl:NamedIndividual rdf:about="simple_perception#box_1">
@@ -96,6 +105,18 @@
     <!-- simple_perception#can_2 -->
 
     <owl:NamedIndividual rdf:about="simple_perception#can_2">
+        <rdf:type rdf:resource="expe_ontologies#Object"/>
+        <expe_ontologies:hasShape rdf:resource="expe_ontologies#round"/>
+        <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
+        <expe_ontologies:hasSize rdf:resource="expe_ontologies#small"/>
+        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#shelf_2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- simple_perception#can_3 -->
+
+    <owl:NamedIndividual rdf:about="simple_perception#can_3">
         <rdf:type rdf:resource="expe_ontologies#Object"/>
         <expe_ontologies:hasShape rdf:resource="expe_ontologies#round"/>
         <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
