@@ -599,6 +599,15 @@
     </owl:Class>
 
 
+    <!-- expe_ontologies#Pen -->
+    <owl:Class rdf:about="expe_ontologies#Pen">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+        <rdfs:label xml:lang="en">pen</rdfs:label>
+        <rdfs:label xml:lang="fr">stylo</rdfs:label>
+    </owl:Class>
+
+
+
 
     <!-- expe_ontologies#Robot -->
 
