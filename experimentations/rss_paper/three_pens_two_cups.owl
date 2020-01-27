@@ -103,6 +103,11 @@
 
 
 
+    <!-- three_pens_two_cups#table_1 -->
+
+    <owl:NamedIndividual rdf:about="three_pens_two_cups#table_1">
+            <rdf:type rdf:resource="expe_ontologies#Table"/>
+    </owl:NamedIndividual>
 
 
     <!--

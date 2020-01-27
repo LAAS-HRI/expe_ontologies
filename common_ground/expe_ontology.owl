@@ -514,6 +514,17 @@
 
 
 
+    <!-- expe_ontologies#Cup -->
+
+    <owl:Class rdf:about="expe_ontologies#Cup">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Container"/>
+        <rdfs:label xml:lang="en">cup</rdfs:label>
+        <rdfs:label xml:lang="fr">tasse</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- expe_ontologies#Drawer -->
 
     <owl:Class rdf:about="expe_ontologies#Drawer">
