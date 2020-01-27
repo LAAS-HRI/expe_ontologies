@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>expe_ontologies</name>
+  <version>0.0.1</version>
+  <description>The expe_ontologies package</description>
+
+  <maintainer email="gsarthou@laas.fr">gbuisan</maintainer>
+
+  <license>GNU LGPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
