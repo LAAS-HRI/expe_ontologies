@@ -613,6 +613,15 @@
     </owl:Class>
 
 
+    <!-- expe_ontologies#Lamp -->
+
+    <owl:Class rdf:about="expe_ontologies#Lamp">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="fr">lampe</rdfs:label>
+        <rdfs:label xml:lang="en">lamp</rdfs:label>
+    </owl:Class>
+
+
 
     <!-- expe_ontologies#LiquidContainer -->
 
