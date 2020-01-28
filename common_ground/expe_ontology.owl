@@ -480,6 +480,16 @@
 
 
 
+    <!-- expe_ontologies#Book -->
+
+    <owl:Class rdf:about="expe_ontologies#book">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+        <rdfs:label xml:lang="en">book</rdfs:label>
+        <rdfs:label xml:lang="fr">livre</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- expe_ontologies#Box -->
 
     <owl:Class rdf:about="expe_ontologies#Box">
@@ -636,6 +646,15 @@
         <owl:disjointWith rdf:resource="expe_ontologies#Robot"/>
         <rdfs:label xml:lang="fr">humain</rdfs:label>
         <rdfs:label xml:lang="en">human</rdfs:label>
+    </owl:Class>
+
+
+    <!-- expe_ontologies#Lamp -->
+
+    <owl:Class rdf:about="expe_ontologies#Lamp">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="fr">lampe</rdfs:label>
+        <rdfs:label xml:lang="en">lamp</rdfs:label>
     </owl:Class>
 
 
@@ -841,6 +860,16 @@
 
 
 
+    <!-- expe_ontologies#grey -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#grey">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+        <rdfs:label xml:lang="fr">gris</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
     <!-- expe_ontologies#large -->
 
     <owl:NamedIndividual rdf:about="expe_ontologies#large">
@@ -875,6 +904,16 @@
         <rdf:type rdf:resource="expe_ontologies#Color"/>
         <rdfs:label xml:lang="en">pink</rdfs:label>
         <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- expe_ontologies#purple -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#purple">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">purple</rdfs:label>
+        <rdfs:label xml:lang="fr">violet</rdfs:label>
     </owl:NamedIndividual>
 
 
