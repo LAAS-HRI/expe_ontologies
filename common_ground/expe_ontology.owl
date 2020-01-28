@@ -484,7 +484,8 @@
 
     <owl:Class rdf:about="expe_ontologies#Box">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Container"/>
-        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+	<rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+	<rdfs:subClassOf rdf:resource="expe_ontologies#Support"/>
         <rdfs:label xml:lang="fr">boite</rdfs:label>
         <rdfs:label xml:lang="en">box</rdfs:label>
     </owl:Class>
@@ -692,7 +693,8 @@
 
     <owl:Class rdf:about="expe_ontologies#Shelf">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Container"/>
-        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+	<rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+	<rdfs:subClassOf rdf:resource="expe_ontologies#Support"/>
         <rdfs:label xml:lang="fr">etagere</rdfs:label>
         <rdfs:label xml:lang="en">shelf</rdfs:label>
     </owl:Class>
@@ -836,6 +838,16 @@
 
 
 
+    <!-- expe_ontologies#pink -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#pink">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">pink</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
     <!-- expe_ontologies#red -->
 
     <owl:NamedIndividual rdf:about="expe_ontologies#red">
@@ -874,6 +886,15 @@
         <rdfs:label xml:lang="fr">blanc</rdfs:label>
     </owl:NamedIndividual>
 
+
+
+    <!-- expe_ontologies#wooden -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#wooden">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">wooden</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur bois</rdfs:label>
+    </owl:NamedIndividual>
 
 
     <!-- expe_ontologies#yellow -->
