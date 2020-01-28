@@ -56,7 +56,9 @@
 
     <owl:NamedIndividual rdf:about="office#room_O_office">
 	    <rdf:type rdf:resource="expe_ontologies#Room"/>
-        <expe_ontologies:hasVolume rdf:datatype="float#float">24.0</expe_ontologies:hasVolume>    
+        <expe_ontologies:hasVolume rdf:datatype="float#float">24.0</expe_ontologies:hasVolume>
+        <rdfs:label xml:lang="fr">bureau</rdfs:label>
+        <rdfs:label xml:lang="en">office</rdfs:label>    
     </owl:NamedIndividual>    
     
 

@@ -26,6 +26,8 @@
     <owl:NamedIndividual rdf:about="bedroom#room_B_bedroom">
       <rdf:type rdf:resource="expe_ontologies#Room"/>
       <expe_ontologies:isVisibleBy rdf:resource="expe_ontologies#bob"/>
+      <rdfs:label xml:lang="fr">chambre à coucher</rdfs:label>
+      <rdfs:label xml:lang="en">bedroom</rdfs:label>
     </owl:NamedIndividual>
 
 

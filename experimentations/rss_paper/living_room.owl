@@ -55,7 +55,9 @@
     <owl:NamedIndividual rdf:about="living_room#room_l_living_room">
 	    	<rdf:type rdf:resource="expe_ontologies#Room"/>
 	    	<expe_ontologies:hasVolume rdf:resource="expe_ontologies#32"/>	
-			<expe_ontologies:isVisibleBy rdf:resource="expe_ontologies#bob"/>    
+			<expe_ontologies:isVisibleBy rdf:resource="expe_ontologies#bob"/>
+            <rdfs:label xml:lang="fr">salon</rdfs:label>
+            <rdfs:label xml:lang="en">living room</rdfs:label>    
     </owl:NamedIndividual>
 
 
