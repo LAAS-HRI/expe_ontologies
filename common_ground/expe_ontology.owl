@@ -511,6 +511,25 @@
         <rdfs:label xml:lang="fr">canette</rdfs:label>
     </owl:Class>
 
+    <!-- expe_ontologies#Bottle -->
+
+    <owl:Class rdf:about="expe_ontologies#Bottle">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#LiquidContainer"/>
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+        <rdfs:label xml:lang="en">bottle</rdfs:label>
+        <rdfs:label xml:lang="fr">bouteille</rdfs:label>
+    </owl:Class>
+
+
+    <!-- expe_ontologies#Ball -->
+
+    <owl:Class rdf:about="expe_ontologies#Ball">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Object"/>
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
+        <rdfs:label xml:lang="en">ball</rdfs:label>
+        <rdfs:label xml:lang="fr">balle</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- expe_ontologies#Chair -->
@@ -521,6 +540,13 @@
         <rdfs:label xml:lang="fr">chaise</rdfs:label>
     </owl:Class>
 
+    <!-- expe_ontologies#Couch -->
+
+    <owl:Class rdf:about="expe_ontologies#Couch">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="en">couch</rdfs:label>
+        <rdfs:label xml:lang="fr">canapé</rdfs:label>
+    </owl:Class>
 
 
     <!-- expe_ontologies#CoatHanger -->
@@ -639,6 +665,11 @@
         <rdfs:subClassOf rdf:resource="expe_ontologies#Container"/>
     </owl:Class>
 
+    <!-- expe_ontologies#FoodContainer -->
+
+    <owl:Class rdf:about="expe_ontologies#FoodContainer">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Container"/>
+    </owl:Class>
 
 
     <!-- expe_ontologies#Mug -->
@@ -903,6 +934,14 @@
         <rdf:type rdf:resource="expe_ontologies#Color"/>
         <rdfs:label xml:lang="en">red</rdfs:label>
         <rdfs:label xml:lang="fr">rouge</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- expe_ontologies#beige -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#beige">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">beige</rdfs:label>
+        <rdfs:label xml:lang="fr">beige</rdfs:label>
     </owl:NamedIndividual>
 
 
