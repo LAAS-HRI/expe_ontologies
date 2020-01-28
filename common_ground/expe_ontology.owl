@@ -482,7 +482,7 @@
 
     <!-- expe_ontologies#Book -->
 
-    <owl:Class rdf:about="expe_ontologies#book">
+    <owl:Class rdf:about="expe_ontologies#Book">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
         <rdfs:label xml:lang="en">book</rdfs:label>
         <rdfs:label xml:lang="fr">livre</rdfs:label>
