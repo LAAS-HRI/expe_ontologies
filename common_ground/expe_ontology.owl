@@ -907,6 +907,15 @@
     </owl:NamedIndividual>
 
 
+    <!-- expe_ontologies#orange -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#orange">
+        <rdf:type rdf:resource="expe_ontologies#Color"/>
+        <rdfs:label xml:lang="en">orange</rdfs:label>
+        <rdfs:label xml:lang="fr">orange</rdfs:label>
+    </owl:NamedIndividual>
+
+
 
     <!-- expe_ontologies#pink -->
 
