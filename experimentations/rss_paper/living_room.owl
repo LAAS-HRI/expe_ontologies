@@ -185,7 +185,7 @@
 
     <!-- living_room#box_l_5 -->
 
-    <owl:NamedIndividual rdf:about="living_room#box_l_4">
+    <owl:NamedIndividual rdf:about="living_room#box_l_5">
             <rdf:type rdf:resource="expe_ontologies#Box"/>
             <expe_ontologies:hasColor rdf:resource="expe_ontologies#red"/>
 	    	<expe_ontologies:isOnTopOf rdf:resource="living_room#table_l_1"/>
