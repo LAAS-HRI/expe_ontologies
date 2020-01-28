@@ -430,6 +430,15 @@
 
 
 
+
+    <!-- expe_ontologies#hasVolume -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hasWeight">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -461,6 +470,16 @@
 
 
 
+    <!-- expe_ontologies#Bed -->
+
+    <owl:Class rdf:about="expe_ontologies#Bed">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="en">bed</rdfs:label>
+        <rdfs:label xml:lang="fr">lit</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- expe_ontologies#Box -->
 
     <owl:Class rdf:about="expe_ontologies#Box">
@@ -479,6 +498,26 @@
         <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
         <rdfs:label xml:lang="en">can</rdfs:label>
         <rdfs:label xml:lang="fr">canette</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#Chair -->
+
+    <owl:Class rdf:about="expe_ontologies#Chair">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="en">chair</rdfs:label>
+        <rdfs:label xml:lang="fr">chaise</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#CoatHanger -->
+
+    <owl:Class rdf:about="expe_ontologies#CoatHanger">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Furniture"/>
+        <rdfs:label xml:lang="en">coat hanger</rdfs:label>
+        <rdfs:label xml:lang="fr">porte manteau</rdfs:label>
     </owl:Class>
 
 
