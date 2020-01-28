@@ -799,6 +799,16 @@
 
 
 
+    <!-- expe_ontologies#bob -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#bob">
+        <rdf:type rdf:resource="expe_ontologies#Human"/>
+        <rdfs:label xml:lang="en">bob</rdfs:label>
+        <rdfs:label xml:lang="fr">bob</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
     <!-- expe_ontologies#box -->
 
     <owl:NamedIndividual rdf:about="expe_ontologies#box">

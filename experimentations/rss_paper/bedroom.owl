@@ -26,6 +26,7 @@
     <owl:NamedIndividual rdf:about="bedroom#room_B_bedroom">
       <rdf:type rdf:resource="expe_ontologies#Room"/>
       <expe_ontologies:isIn rdf:resource="bedroom#D"/>
+      <expe_ontologies:isVisibleBy rdf:resource="expe_ontologies#bob"/>
     </owl:NamedIndividual>
 
 
