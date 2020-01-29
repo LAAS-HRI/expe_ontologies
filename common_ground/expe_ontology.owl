@@ -386,7 +386,6 @@
 
     <owl:ObjectProperty rdf:about="expe_ontologies#isVisibleBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
         <rdfs:range rdf:resource="expe_ontologies#Agent"/>
     </owl:ObjectProperty>
 
