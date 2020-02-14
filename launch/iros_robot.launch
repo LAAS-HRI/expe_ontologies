@@ -1,0 +1,16 @@
+<launch>
+	<arg name="marker_size" default="6" />
+	<arg name="max_new_marker_error" default="0.08" />
+	<arg name="max_track_error" default="0.2" />
+
+	<arg name="cam_image_topic" default="/wide_stereo/left/image_color" />
+	<arg name="cam_info_topic" default="/wide_stereo/left/camera_info" />
+
+	<arg name="output_frame" default="/base_footprint" />
+	<arg name="bundle_files" default="
+    $(find expe_ontologies)/experimentations/iros_paper/bundles/MarkerData_100_101.xml
+    $(find expe_ontologies)/experimentations/iros_paper/bundles/MarkerData_102_103.xml
+    $(find expe_ontologies)/experimentations/iros_paper/bundles/MarkerData_104_105.xml" />
+
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
+</launch>
