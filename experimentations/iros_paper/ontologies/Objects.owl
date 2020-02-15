@@ -118,7 +118,7 @@
 
     <owl:Class rdf:about="expe_ontologies#MilkBox">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Bottle"/>
-        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshes/MilkBox.dae</objects:hasMesh>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/MilkBox.dae</objects:hasMesh>
     </owl:Class>
 
 
@@ -127,7 +127,7 @@
 
     <owl:Class rdf:about="expe_ontologies#OrangeJuceBox">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Bottle"/>
-        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshes/OrangeJuceBox.dae</objects:hasMesh>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/OrangeJuceBox.dae</objects:hasMesh>
     </owl:Class>
 
 
@@ -137,7 +137,7 @@
     <owl:Class rdf:about="expe_ontologies#WheatBox">
         <rdfs:subClassOf rdf:resource="expe_ontologies#FoodContainer"/>
         <rdfs:subClassOf rdf:resource="expe_ontologies#Pickable"/>
-        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshes/WheatBox.dae</objects:hasMesh>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/WheatBox.dae</objects:hasMesh>
     </owl:Class>
 
 
