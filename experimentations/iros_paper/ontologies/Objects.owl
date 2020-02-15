@@ -21,6 +21,17 @@
 
 
 
+    <!-- expe_ontologies#hasGraspPose -->
+
+    <owl:ObjectProperty rdf:about="expe_ontologies#hasGraspPose">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
+        <rdfs:range rdf:resource="expe_ontologies#GrapPose"/>
+    </owl:ObjectProperty>
+
+
+
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -50,6 +61,43 @@
 
 
 
+
+      <!-- expe_ontologies#GraspValueProperty -->
+
+      <owl:DatatypeProperty rdf:about="expe_ontologies#GraspValueProperty">
+          <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+          <rdfs:domain rdf:resource="expe_ontologies#GrapPose"/>
+      </owl:DatatypeProperty>
+
+
+
+
+      <!-- expe_ontologies#preGraspValue -->
+
+      <owl:DatatypeProperty rdf:about="expe_ontologies#preGraspValue">
+          <rdfs:subPropertyOf rdf:resource="expe_ontologies#GraspValueProperty"/>
+      </owl:DatatypeProperty>
+
+
+
+
+      <!-- expe_ontologies#graspValue -->
+
+      <owl:DatatypeProperty rdf:about="expe_ontologies#graspValue">
+          <rdfs:subPropertyOf rdf:resource="expe_ontologies#GraspValueProperty"/>
+      </owl:DatatypeProperty>
+
+
+
+
+      <!-- expe_ontologies#postGraspValue -->
+
+      <owl:DatatypeProperty rdf:about="expe_ontologies#postGraspValue">
+          <rdfs:subPropertyOf rdf:resource="expe_ontologies#GraspValueProperty"/>
+      </owl:DatatypeProperty>
+
+
+
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -57,6 +105,12 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
   -->
+
+
+
+    <!-- expe_ontologies#GrapPose -->
+
+    <owl:Class rdf:about="expe_ontologies#GrapPose"/>
 
 
 
@@ -101,13 +155,51 @@
 
 
 
+    <!-- expe_ontologies#milk_box_0_grasp_pose_0 -->
+
+    <owl:NamedIndividual rdf:about="expe_ontologies#milk_box_0_grasp_pose_0">
+        <rdf:type rdf:resource="expe_ontologies#GrapPose"/>
+        <objects:preGraspValue rdf:datatype="pose#approach">base_footprint,10.0,5.0,0.0</objects:preGraspValue>
+        <objects:graspValue rdf:datatype="pose#pose">10.0,0.0,0.0,0.0,0.0,0.0,1.0</objects:graspValue>
+        <objects:postGraspValue rdf:datatype="pose#approach">base_footprint,10.0,5.0,1.0</objects:postGraspValue>
+    </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#milk_box_0_grasp_pose_1 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#milk_box_0_grasp_pose_1">
+       <rdf:type rdf:resource="expe_ontologies#GrapPose"/>
+       <objects:preGraspValue rdf:datatype="pose#approach">base_footprint,10.0,5.0,0.0</objects:preGraspValue>
+       <objects:graspValue rdf:datatype="pose#pose">10.0,0.0,0.0,0.0,0.0,0.707,0.707</objects:graspValue>
+       <objects:postGraspValue rdf:datatype="pose#approach">base_footprint,10.0,5.0,1.0</objects:postGraspValue>
+   </owl:NamedIndividual>
+
+
+
+
     <!-- expe_ontologies#milk_box_0 -->
 
     <owl:NamedIndividual rdf:about="expe_ontologies#milk_box_0">
         <rdf:type rdf:resource="expe_ontologies#MilkBox"/>
         <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">100</objects:hasArId>
         <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">101</objects:hasArId>
+        <objects:hasGraspPose rdf:resource="objects#milk_box_0_grasp_pose_0"/>
+        <objects:hasGraspPose rdf:resource="objects#milk_box_0_grasp_pose_1"/>
     </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#orange_juce_0_grasp_pose_0 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#orange_juce_0_grasp_pose_0">
+       <rdf:type rdf:resource="expe_ontologies#GrapPose"/>
+       <objects:preGraspValue rdf:datatype="pose#approach">base_footprint,10.0,4.0,0.0</objects:preGraspValue>
+       <objects:graspValue rdf:datatype="pose#pose">9.0,0.0,0.0,0.0,0.0,0.0,1.0</objects:graspValue>
+       <objects:postGraspValue rdf:datatype="pose#approach">base_footprint,10.0,4.0,1.0</objects:postGraspValue>
+   </owl:NamedIndividual>
 
 
 
@@ -118,7 +210,20 @@
        <rdf:type rdf:resource="expe_ontologies#OrangeJuceBox"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">104</objects:hasArId>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">105</objects:hasArId>
+       <objects:hasGraspPose rdf:resource="objects#orange_juce_0_grasp_pose_0"/>
    </owl:NamedIndividual>
+
+
+
+
+  <!-- expe_ontologies#wheat_box_0_grasp_pose_0 -->
+
+  <owl:NamedIndividual rdf:about="expe_ontologies#wheat_box_0_grasp_pose_0">
+      <rdf:type rdf:resource="expe_ontologies#GrapPose"/>
+      <objects:preGraspValue rdf:datatype="pose#approach">base_footprint,10.0,6.0,0.0</objects:preGraspValue>
+      <objects:graspValue rdf:datatype="pose#pose">8.0,0.0,0.0,0.0,0.0,0.0,1.0</objects:graspValue>
+      <objects:postGraspValue rdf:datatype="pose#approach">base_footprint,10.0,6.0,1.0</objects:postGraspValue>
+  </owl:NamedIndividual>
 
 
 
@@ -129,6 +234,7 @@
       <rdf:type rdf:resource="expe_ontologies#WheatBox"/>
       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</objects:hasArId>
       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">103</objects:hasArId>
+      <objects:hasGraspPose rdf:resource="objects#wheat_box_0_grasp_pose_0"/>
   </owl:NamedIndividual>
 
 
