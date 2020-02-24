@@ -196,6 +196,16 @@
 
 
 
+    <!-- expe_ontologies#hasText -->
+
+    <owl:ObjectProperty rdf:about="expe_ontologies#hasText">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
+        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
+    </owl:ObjectProperty>
+
+
+
     <!-- expe_ontologies#hasPose -->
 
     <owl:ObjectProperty rdf:about="expe_ontologies#hasPose">

@@ -134,19 +134,55 @@
 
 
 
-      <!-- expe_ontologies#PickPGraspPose -->
+    <!-- expe_ontologies#PickPGraspPose -->
 
-      <owl:Class rdf:about="expe_ontologies#PickPGraspPose">
-          <rdfs:subClassOf rdf:resource="expe_ontologies#GraspPose"/>
-      </owl:Class>
+    <owl:Class rdf:about="expe_ontologies#PickPGraspPose">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#GraspPose"/>
+    </owl:Class>
 
 
 
-        <!-- expe_ontologies#PlaceGraspPose -->
+    <!-- expe_ontologies#PlaceGraspPose -->
 
-        <owl:Class rdf:about="expe_ontologies#PlaceGraspPose">
-            <rdfs:subClassOf rdf:resource="expe_ontologies#GraspPose"/>
-        </owl:Class>
+    <owl:Class rdf:about="expe_ontologies#PlaceGraspPose">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#GraspPose"/>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#BlackCube -->
+
+    <owl:Class rdf:about="expe_ontologies#BlackCube">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Cube"/>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/BlackCube.dae</objects:hasMesh>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#BlueCube -->
+
+    <owl:Class rdf:about="expe_ontologies#BlueCube">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Cube"/>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/BlueCube.dae</objects:hasMesh>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#RedCube -->
+
+    <owl:Class rdf:about="expe_ontologies#RedCube">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Cube"/>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/RedCube.dae</objects:hasMesh>
+    </owl:Class>
+
+
+
+    <!-- expe_ontologies#GreenCube -->
+
+    <owl:Class rdf:about="expe_ontologies#GreenCube">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Cube"/>
+        <objects:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://expe_ontologies/experimentations/iros_paper/meshs/GreenCube.dae</objects:hasMesh>
+    </owl:Class>
 
 
 
@@ -298,14 +334,146 @@
 
 
 
- <!-- expe_ontologies#maizena_box_0 -->
+   <!-- expe_ontologies#maizena_box_0 -->
 
- <owl:NamedIndividual rdf:about="expe_ontologies#maizena_box_0">
-     <rdf:type rdf:resource="expe_ontologies#MaizenaBox"/>
-     <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">106</objects:hasArId>
-     <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">107</objects:hasArId>
-     <objects:hasPickGraspPose rdf:resource="objects#maizena_box_0_grasp_pose_0"/>
- </owl:NamedIndividual>
+   <owl:NamedIndividual rdf:about="expe_ontologies#maizena_box_0">
+       <rdf:type rdf:resource="expe_ontologies#MaizenaBox"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">106</objects:hasArId>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">107</objects:hasArId>
+       <objects:hasPickGraspPose rdf:resource="objects#maizena_box_0_grasp_pose_0"/>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_200 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_200">
+       <rdf:type rdf:resource="expe_ontologies#BlueCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">200</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_206 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_206">
+       <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_212 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_212">
+       <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_218 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_218">
+       <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">218</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_224 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_224">
+       <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">224</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_230 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_230">
+       <rdf:type rdf:resource="expe_ontologies#RedCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">230</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_236 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_236">
+       <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">236</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_242 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_242">
+       <rdf:type rdf:resource="expe_ontologies#BlueCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">242</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_248 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_248">
+       <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">248</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_254 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_254">
+       <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">254</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_260 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_260">
+       <rdf:type rdf:resource="expe_ontologies#RedCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">260</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#cube_266 -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#cube_266">
+       <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">266</objects:hasArId>
+       <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
 
 
     <!--
