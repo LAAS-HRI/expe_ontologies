@@ -136,7 +136,7 @@
 
     <!-- expe_ontologies#PickPGraspPose -->
 
-    <owl:Class rdf:about="expe_ontologies#PickPGraspPose">
+    <owl:Class rdf:about="expe_ontologies#PickGraspPose">
         <rdfs:subClassOf rdf:resource="expe_ontologies#GraspPose"/>
     </owl:Class>
 
