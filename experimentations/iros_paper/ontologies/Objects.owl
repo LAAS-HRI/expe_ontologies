@@ -52,6 +52,27 @@
 
 
 
+   <!-- expe_ontologies#isInStorageAre -->
+
+   <owl:ObjectProperty rdf:about="expe_ontologies#isInStorageAre">
+       <rdfs:subPropertyOf rdf:resource="expe_ontologies#isIn"/>
+       <rdfs:domain rdf:resource="expe_ontologies#Object"/>
+       <rdfs:range rdf:resource="expe_ontologies#StorageArea"/>
+   </owl:ObjectProperty>
+
+
+
+   <!-- expe_ontologies#storageAreaHasIn -->
+
+   <owl:ObjectProperty rdf:about="expe_ontologies#storageAreaHasIn">
+       <rdfs:subPropertyOf rdf:resource="expe_ontologies#hasIn"/>
+       <owl:inverseOf rdf:resource="expe_ontologies#isInStorageAre"/>
+       <rdfs:domain rdf:resource="expe_ontologies#StorageArea"/>
+       <rdfs:range rdf:resource="expe_ontologies#Object"/>
+   </owl:ObjectProperty>
+
+
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -125,6 +146,14 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
   -->
+
+
+
+    <!-- expe_ontologies#StorageArea -->
+
+    <owl:Class rdf:about="expe_ontologies#StorageArea">
+        <rdfs:subClassOf rdf:resource="expe_ontologies#Area"/>
+    </owl:Class>
 
 
 
@@ -473,6 +502,39 @@
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">266</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#red_storage -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#red_storage">
+       <rdf:type rdf:resource="expe_ontologies#StorageArea"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#red"/>
+       <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#black_storage -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#black_storage">
+       <rdf:type rdf:resource="expe_ontologies#StorageArea"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#black"/>
+       <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
+   </owl:NamedIndividual>
+
+
+
+
+   <!-- expe_ontologies#white_storage -->
+
+   <owl:NamedIndividual rdf:about="expe_ontologies#white_storage">
+       <rdf:type rdf:resource="expe_ontologies#StorageArea"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#white"/>
+       <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
    </owl:NamedIndividual>
 
 

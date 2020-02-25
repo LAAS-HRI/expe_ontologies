@@ -8,7 +8,7 @@
 	<node name="toaster_visualizer" pkg="toaster_visualizer" type="toaster_visualizer" output="screen" />
 	<node name="toaster_simu" pkg="toaster_simu" type="toaster_simu" output="screen" />
 
-	 <node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+	<node name="rviz" pkg="rviz" type="rviz" output="screen"/>
 
 	<node pkg="tf" type="static_transform_publisher" name="pr2_broadcaster" args="1 0 0 0 0 0 1 map base_footprint 100"/>
 </launch>
