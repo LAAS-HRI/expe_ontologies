@@ -57,10 +57,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_200">
        <rdf:type rdf:resource="expe_ontologies#BlueCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#blue"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">200</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#red_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#red_storage"/>
    </owl:NamedIndividual>
 
 
@@ -70,10 +71,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_206">
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#red_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#red_storage"/>
    </owl:NamedIndividual>
 
 
@@ -83,10 +85,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_212">
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#red_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#red_storage"/>
    </owl:NamedIndividual>
 
 
@@ -96,10 +99,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_218">
        <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#black"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">218</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#red_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#red_storage"/>
    </owl:NamedIndividual>
 
 
@@ -109,10 +113,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_224">
        <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#black"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">224</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#black_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#black_storage"/>
    </owl:NamedIndividual>
 
 
@@ -122,10 +127,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_230">
        <rdf:type rdf:resource="expe_ontologies#RedCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#red"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">230</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#black_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#black_storage"/>
    </owl:NamedIndividual>
 
 
@@ -135,10 +141,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_236">
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">236</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#black_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#black_storage"/>
    </owl:NamedIndividual>
 
 
@@ -148,10 +155,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_242">
        <rdf:type rdf:resource="expe_ontologies#BlueCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#blue"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">242</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#black_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#black_storage"/>
    </owl:NamedIndividual>
 
 
@@ -161,10 +169,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_248">
        <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#black"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">248</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#black_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#black_storage"/>
    </owl:NamedIndividual>
 
 
@@ -174,10 +183,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_254">
        <rdf:type rdf:resource="expe_ontologies#BlackCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#black"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">254</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#white_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#white_storage"/>
    </owl:NamedIndividual>
 
 
@@ -187,10 +197,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_260">
        <rdf:type rdf:resource="expe_ontologies#RedCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#red"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">260</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#white_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#white_storage"/>
    </owl:NamedIndividual>
 
 
@@ -200,10 +211,11 @@
 
    <owl:NamedIndividual rdf:about="expe_ontologies#cube_266">
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
+       <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">266</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
-       <expe_ontologies:isInStorageAre rdf:resource="expe_ontologies#white_storage"/>
+       <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#white_storage"/>
    </owl:NamedIndividual>
 
 

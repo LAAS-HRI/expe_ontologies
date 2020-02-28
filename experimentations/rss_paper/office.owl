@@ -164,29 +164,6 @@
     </owl:NamedIndividual>
 
 
-
-    <!-- office#room_O_book_0 -->
-
-    <owl:NamedIndividual rdf:about="office#room_O_book_0">
-      <rdf:type rdf:resource="expe_ontologies#Book"/>
-      <expe_ontologies:isInRoom rdf:resource="office#room_O_office"/>
-      <expe_ontologies:isInContainer rdf:resource="office#shelf_O_0"/>
-      <expe_ontologies:hasColor rdf:resource="expe_ontologies#pink"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- office#room_B_book_9 -->
-
-    <owl:NamedIndividual rdf:about="office#room_B_book_9">
-      <rdf:type rdf:resource="expe_ontologies#Book"/>
-      <expe_ontologies:isInRoom rdf:resource="office#room_O_office"/>
-      <expe_ontologies:isInContainer rdf:resource="office#shelf_O_0"/>
-      <expe_ontologies:atRightOf rdf:resource="office#room_O_book_0"/>
-      <expe_ontologies:hasColor rdf:resource="expe_ontologies#grey"/>
-    </owl:NamedIndividual>
-
-
     <!-- office#TV_O_0 -->
 
     <owl:NamedIndividual rdf:about="office#TV_O_0">
