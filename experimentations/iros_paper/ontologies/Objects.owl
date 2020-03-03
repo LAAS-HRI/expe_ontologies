@@ -52,9 +52,9 @@
 
 
 
-   <!-- expe_ontologies#isInStorageAre -->
+   <!-- expe_ontologies#isInStorageArea -->
 
-   <owl:ObjectProperty rdf:about="expe_ontologies#isInStorageAre">
+   <owl:ObjectProperty rdf:about="expe_ontologies#isInStorageArea">
        <rdfs:subPropertyOf rdf:resource="expe_ontologies#isIn"/>
        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
        <rdfs:range rdf:resource="expe_ontologies#StorageArea"/>
@@ -66,7 +66,7 @@
 
    <owl:ObjectProperty rdf:about="expe_ontologies#storageAreaHasIn">
        <rdfs:subPropertyOf rdf:resource="expe_ontologies#hasIn"/>
-       <owl:inverseOf rdf:resource="expe_ontologies#isInStorageAre"/>
+       <owl:inverseOf rdf:resource="expe_ontologies#isInStorageArea"/>
        <rdfs:domain rdf:resource="expe_ontologies#StorageArea"/>
        <rdfs:range rdf:resource="expe_ontologies#Object"/>
    </owl:ObjectProperty>
@@ -153,6 +153,7 @@
 
     <owl:Class rdf:about="expe_ontologies#StorageArea">
         <rdfs:subClassOf rdf:resource="expe_ontologies#Area"/>
+        <rdfs:label xml:lang="en">storage area</rdfs:label>
     </owl:Class>
 
 

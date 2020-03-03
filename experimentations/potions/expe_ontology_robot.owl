@@ -186,26 +186,6 @@
 
 
 
-    <!-- expe_ontologies#hasMesh -->
-
-    <owl:ObjectProperty rdf:about="expe_ontologies#hasMesh">
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
-        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
-    </owl:ObjectProperty>
-
-
-
-    <!-- expe_ontologies#hasText -->
-
-    <owl:ObjectProperty rdf:about="expe_ontologies#hasText">
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
-        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
-    </owl:ObjectProperty>
-
-
-
     <!-- expe_ontologies#hasPose -->
 
     <owl:ObjectProperty rdf:about="expe_ontologies#hasPose">
@@ -692,6 +672,26 @@
 
     <owl:DatatypeProperty rdf:about="expe_ontologies#hasVolume">
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- expe_ontologies#hasMesh -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hasMesh">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
+        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- expe_ontologies#hasText -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hasText">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
+        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
     </owl:DatatypeProperty>
 
 
