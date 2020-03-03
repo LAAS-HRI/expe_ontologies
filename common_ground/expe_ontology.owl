@@ -274,6 +274,8 @@
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#GeometricalRelation"/>
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#SpeakableRelation"/>
         <rdfs:domain rdf:resource="expe_ontologies#Entity"/>
+        <rdfs:label xml:lang="fr">dans</rdfs:label>
+        <rdfs:label xml:lang="en">in</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -284,6 +286,8 @@
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#isIn"/>
         <rdfs:domain rdf:resource="expe_ontologies#Object"/>
         <rdfs:range rdf:resource="expe_ontologies#Container"/>
+        <rdfs:label xml:lang="fr">dans</rdfs:label>
+        <rdfs:label xml:lang="en">in</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -443,6 +447,8 @@
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#DisplayableRelation"/>
         <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
         <rdfs:domain rdf:resource="expe_ontologies#Object"/>
+        <rdfs:label xml:lang="en">with the number</rdfs:label>
+        <rdfs:label xml:lang="fr">avec le chiffre</rdfs:label>
     </owl:DatatypeProperty>
 
 
