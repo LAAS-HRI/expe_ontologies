@@ -58,6 +58,8 @@
        <rdfs:subPropertyOf rdf:resource="expe_ontologies#isIn"/>
        <rdfs:domain rdf:resource="expe_ontologies#Object"/>
        <rdfs:range rdf:resource="expe_ontologies#StorageArea"/>
+       <rdfs:label xml:lang="en">which is in</rdfs:label>
+       <rdfs:label xml:lang="fr">qui est dans</rdfs:label>
    </owl:ObjectProperty>
 
 
