@@ -50,8 +50,8 @@ ownerId: ''
 type: 'object'
 pose:
   position:
-    x: 3.8
-    y: 7.7
+    x: 3.77
+    y: 7.6
     z: 0.0
   orientation:
     x: 0.0
