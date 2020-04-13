@@ -1,0 +1,917 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="ontologenius#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="ontologenius"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- ontologenius#Area -->
+
+    <owl:Class rdf:about="ontologenius#Area">
+        <rdfs:label xml:lang="en">area</rdfs:label>
+        <rdfs:label xml:lang="fr">zone</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Color -->
+
+    <owl:Class rdf:about="ontologenius#Color">
+        <rdfs:label xml:lang="en">color</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Entity -->
+
+    <owl:Class rdf:about="ontologenius#Entity">
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Shape -->
+
+    <owl:Class rdf:about="ontologenius#Shape">
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+        <rdfs:label xml:lang="fr">forme</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Size -->
+
+    <owl:Class rdf:about="ontologenius#Size">
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Agent -->
+
+    <owl:Class rdf:about="ontologenius#Agent">
+        <rdfs:subClassOf rdf:resource="ontologenius#Entity"/>
+        <owl:disjointWith rdf:resource="ontologenius#Object"/>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="fr">agent</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Box -->
+
+    <owl:Class rdf:about="ontologenius#Box">
+        <rdfs:subClassOf rdf:resource="ontologenius#Container"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pickable"/>
+        <rdfs:label xml:lang="en">box</rdfs:label>
+        <rdfs:label xml:lang="fr">boite</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Container -->
+
+    <owl:Class rdf:about="ontologenius#Container">
+        <rdfs:subClassOf rdf:resource="ontologenius#Object"/>
+        <rdfs:label xml:lang="en">container</rdfs:label>
+        <rdfs:label xml:lang="fr">conteneur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Cube -->
+
+    <owl:Class rdf:about="ontologenius#Cube">
+        <rdfs:subClassOf rdf:resource="ontologenius#Pickable"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Support"/>
+        <owl:disjointWith rdf:resource="ontologenius#Drawer"/>
+        <rdfs:label xml:lang="en">cube</rdfs:label>
+        <rdfs:label xml:lang="fr">cube</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Drawer -->
+
+    <owl:Class rdf:about="ontologenius#Drawer">
+        <rdfs:subClassOf rdf:resource="ontologenius#Container"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Furniture"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Support"/>
+        <rdfs:label xml:lang="en">drawer</rdfs:label>
+        <rdfs:label xml:lang="fr">tiroir</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Fan -->
+
+    <owl:Class rdf:about="ontologenius#Fan">
+        <rdfs:subClassOf rdf:resource="ontologenius#Furniture"/>
+        <rdfs:label xml:lang="en">fan</rdfs:label>
+        <rdfs:label xml:lang="fr">ventilateur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Furniture -->
+
+    <owl:Class rdf:about="ontologenius#Furniture">
+        <rdfs:subClassOf rdf:resource="ontologenius#Object"/>
+        <rdfs:label xml:lang="en">furniture</rdfs:label>
+        <rdfs:label xml:lang="fr">meuble</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Human -->
+
+    <owl:Class rdf:about="ontologenius#Human">
+        <rdfs:subClassOf rdf:resource="ontologenius#Agent"/>
+        <owl:disjointWith rdf:resource="ontologenius#Robot"/>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+        <rdfs:label xml:lang="fr">humain</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Mug -->
+
+    <owl:Class rdf:about="ontologenius#Mug">
+        <rdfs:subClassOf rdf:resource="ontologenius#Container"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pickable"/>
+        <rdfs:label xml:lang="en">mug</rdfs:label>
+        <rdfs:label xml:lang="fr">tasse</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Object -->
+
+    <owl:Class rdf:about="ontologenius#Object">
+        <rdfs:subClassOf rdf:resource="ontologenius#Entity"/>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Pickable -->
+
+    <owl:Class rdf:about="ontologenius#Pickable">
+        <rdfs:subClassOf rdf:resource="ontologenius#Object"/>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Robot -->
+
+    <owl:Class rdf:about="ontologenius#Robot">
+        <rdfs:subClassOf rdf:resource="ontologenius#Agent"/>
+        <rdfs:label xml:lang="en">robot</rdfs:label>
+        <rdfs:label xml:lang="fr">robot</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Room -->
+
+    <owl:Class rdf:about="ontologenius#Room">
+        <rdfs:subClassOf rdf:resource="ontologenius#Area"/>
+        <rdfs:label xml:lang="en">room</rdfs:label>
+        <rdfs:label xml:lang="fr">salle</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Shelf -->
+
+    <owl:Class rdf:about="ontologenius#Shelf">
+        <rdfs:subClassOf rdf:resource="ontologenius#Container"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Furniture"/>
+        <rdfs:label xml:lang="en">shelf</rdfs:label>
+        <rdfs:label xml:lang="fr">etagere</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Spot -->
+
+    <owl:Class rdf:about="ontologenius#Spot">
+        <rdfs:subClassOf rdf:resource="ontologenius#Area"/>
+        <rdfs:label xml:lang="en">spot</rdfs:label>
+        <rdfs:label xml:lang="fr">endroit</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Support -->
+
+    <owl:Class rdf:about="ontologenius#Support">
+        <rdfs:subClassOf rdf:resource="ontologenius#Object"/>
+        <rdfs:label xml:lang="en">support</rdfs:label>
+        <rdfs:label xml:lang="fr">support</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#TV -->
+
+    <owl:Class rdf:about="ontologenius#TV">
+        <rdfs:subClassOf rdf:resource="ontologenius#Furniture"/>
+        <rdfs:label xml:lang="en">tv</rdfs:label>
+        <rdfs:label xml:lang="fr">tele</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#Table -->
+
+    <owl:Class rdf:about="ontologenius#Table">
+        <rdfs:subClassOf rdf:resource="ontologenius#Furniture"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Support"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- ontologenius#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#topObjectProperty">
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#DisplayableRelation -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#DisplayableRelation">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#GeometricalRelation -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#GeometricalRelation">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#PointableRelation -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#PointableRelation">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#SpeakableRelation -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#SpeakableRelation">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#VisualRelation -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#VisualRelation">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#atLeftOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#atLeftOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="ontologenius#atRightOf"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+        <rdfs:label xml:lang="en">at left of</rdfs:label>
+        <rdfs:label xml:lang="fr">a gauche de</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#atRightOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#atRightOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+        <rdfs:label xml:lang="en">at right of</rdfs:label>
+        <rdfs:label xml:lang="fr">a droite de</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#behind -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#behind">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="ontologenius#inFrontOf"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+        <rdfs:label xml:lang="en">behind</rdfs:label>
+        <rdfs:label xml:lang="fr">derriere</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#canSee -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#canSee">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#containerHasIn -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#containerHasIn">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#hasIn"/>
+        <owl:inverseOf rdf:resource="ontologenius#isInContainer"/>
+        <rdfs:range rdf:resource="ontologenius#Object"/>
+        <rdfs:domain rdf:resource="ontologenius#Container"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasColor -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasColor">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Color"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasConnectionFrom -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasConnectionFrom">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="ontologenius#isConnectedTo"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasIn -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasIn">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="ontologenius#isIn"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasInLeftHand -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasInLeftHand">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isHolding"/>
+        <owl:inverseOf rdf:resource="ontologenius#isInLeftHandOf"/>
+        <rdfs:range rdf:resource="ontologenius#Pickable"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasInReach -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasInReach">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="ontologenius#isReachableBy"/>
+        <rdfs:range rdf:resource="ontologenius#Object"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasInRightHand -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasInRightHand">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isHolding"/>
+        <owl:inverseOf rdf:resource="ontologenius#isInRightHandOf"/>
+        <rdfs:range rdf:resource="ontologenius#Pickable"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasMesh -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasMesh">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasPose -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasPose">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#PointableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasShape -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasShape">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Shape"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasSize -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasSize">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Size"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#hasVolume -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#VisualRelation"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#inFrontOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#inFrontOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+        <rdfs:label xml:lang="en">in front of</rdfs:label>
+        <rdfs:label xml:lang="fr">devant</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isConnectedTo">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isHeldBy -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isHeldBy">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="ontologenius#isHolding"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Pickable"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isHolding -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isHolding">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Pickable"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isIn -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isIn">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <rdfs:domain rdf:resource="ontologenius#Entity"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isInContainer -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isInContainer">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isIn"/>
+        <rdfs:range rdf:resource="ontologenius#Container"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isInLeftHandOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isInLeftHandOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isHeldBy"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Pickable"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isInRightHandOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isInRightHandOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isHeldBy"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Pickable"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isInRoom -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isInRoom">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#isIn"/>
+        <owl:inverseOf rdf:resource="ontologenius#roomHasIn"/>
+        <rdfs:range rdf:resource="ontologenius#Room"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isOnTopOf -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isOnTopOf">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="ontologenius#isUnder"/>
+        <rdfs:range rdf:resource="ontologenius#Support"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isReachableBy -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isReachableBy">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isSeeing -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isSeeing">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="ontologenius#isSeenBy"/>
+        <rdfs:range rdf:resource="ontologenius#Object"/>
+        <rdfs:domain rdf:resource="ontologenius#Agent"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isSeenBy -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isSeenBy">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isUnder -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isUnder">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="ontologenius#SpeakableRelation"/>
+        <rdfs:range rdf:resource="ontologenius#Object"/>
+        <rdfs:domain rdf:resource="ontologenius#Support"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#isVisibleBy -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#isVisibleBy">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#topObjectProperty"/>
+        <rdfs:range rdf:resource="ontologenius#Agent"/>
+        <rdfs:domain rdf:resource="ontologenius#Object"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- ontologenius#roomHasIn -->
+
+    <owl:ObjectProperty rdf:about="ontologenius#roomHasIn">
+        <rdfs:subPropertyOf rdf:resource="ontologenius#hasIn"/>
+        <rdfs:range rdf:resource="ontologenius#Entity"/>
+        <rdfs:domain rdf:resource="ontologenius#Room"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- ontologenius#black -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#black">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+        <rdfs:label xml:lang="fr">noir</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#blue -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#blue">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+        <rdfs:label xml:lang="fr">bleu</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#box -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#box">
+        <rdf:type rdf:resource="ontologenius#Shape"/>
+        <rdfs:label xml:lang="en">rectangular</rdfs:label>
+        <rdfs:label xml:lang="fr">rectangulaire</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#cyan -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#cyan">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">light blue</rdfs:label>
+        <rdfs:label xml:lang="fr">bleu clair</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#green -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#green">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+        <rdfs:label xml:lang="fr">vert</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#large -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#large">
+        <rdf:type rdf:resource="ontologenius#Size"/>
+        <rdfs:label xml:lang="en">large</rdfs:label>
+        <rdfs:label xml:lang="fr">grand</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#magenta -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#magenta">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">pink</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#medium -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#medium">
+        <rdf:type rdf:resource="ontologenius#Size"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#red -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#red">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+        <rdfs:label xml:lang="fr">rouge</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#round -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#round">
+        <rdf:type rdf:resource="ontologenius#Shape"/>
+        <rdfs:label xml:lang="en">circular</rdfs:label>
+        <rdfs:label xml:lang="fr">circulaire</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#small -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#small">
+        <rdf:type rdf:resource="ontologenius#Size"/>
+        <rdfs:label xml:lang="en">small</rdfs:label>
+        <rdfs:label xml:lang="fr">petit</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#white -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#white">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">white</rdfs:label>
+        <rdfs:label xml:lang="fr">blanc</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#yellow -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#yellow">
+        <rdf:type rdf:resource="ontologenius#Color"/>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+        <rdfs:label xml:lang="fr">jaune</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_0 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_0">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#box"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#large"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#red"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_3 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_3">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#box"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#medium"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#yellow"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_4 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_4">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#round"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#small"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#yellow"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_5 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_5">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#round"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#small"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#white"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_6 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_6">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#round"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#small"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#cyan"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#obj_2 -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#obj_2">
+        <rdf:type rdf:resource="ontologenius#Object"/>
+        <ontologenius:hasShape rdf:resource="ontologenius#box"/>
+        <ontologenius:hasSize rdf:resource="ontologenius#small"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#cyan"/>
+        <ontologenius:hasColor rdf:resource="ontologenius#white"/>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+             <rdf:Description rdf:about="ontologenius#Area"/>
+             <rdf:Description rdf:about="ontologenius#Color"/>
+             <rdf:Description rdf:about="ontologenius#Entity"/>
+             <rdf:Description rdf:about="ontologenius#Shape"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+             <rdf:Description rdf:about="ontologenius#Box"/>
+             <rdf:Description rdf:about="ontologenius#Drawer"/>
+             <rdf:Description rdf:about="ontologenius#Mug"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+             <rdf:Description rdf:about="ontologenius#Cube"/>
+             <rdf:Description rdf:about="ontologenius#Drawer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+             <rdf:Description rdf:about="ontologenius#Drawer"/>
+             <rdf:Description rdf:about="ontologenius#Fan"/>
+             <rdf:Description rdf:about="ontologenius#Shelf"/>
+             <rdf:Description rdf:about="ontologenius#TV"/>
+             <rdf:Description rdf:about="ontologenius#Table"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the ontologenius https://sarthou.github.io/ontologenius/ -->
