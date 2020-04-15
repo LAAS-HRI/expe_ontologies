@@ -1,0 +1,889 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="shenli_scene1#"
+     xml:base="shenli_scene1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="shenli_scene1"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- shenli_scene1#SpeakableRelation -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#SpeakableRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- shenli_scene1#VisualRelation -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#VisualRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+
+    <!-- shenli_scene1#hasColor -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#hasColor">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#VisualRelation"/>
+        <rdfs:domain rdf:resource="shenli_scene1#Object"/>
+        <rdfs:range rdf:resource="shenli_scene1#Color"/>
+    </owl:ObjectProperty>
+
+    <!-- shenli_scene1#behind -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#behind">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="shenli_scene1#inFrontOf"/>
+        <rdfs:domain rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:range rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:label xml:lang="en">behind</rdfs:label>
+        <rdfs:label xml:lang="fr">derriere</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- shenli_scene1#atLeftOf -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#atLeftOf">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#SpeakableRelation"/>
+        <owl:inverseOf rdf:resource="shenli_scene1#atRightOf"/>
+        <rdfs:domain rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:range rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:label xml:lang="fr">a gauche de</rdfs:label>
+        <rdfs:label xml:lang="en">at left of</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- shenli_scene1#atRightOf -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#atRightOf">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#SpeakableRelation"/>
+        <rdfs:domain rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:range rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:label xml:lang="fr">a droite de</rdfs:label>
+        <rdfs:label xml:lang="en">at right of</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- shenli_scene1#inFrontOf -->
+
+    <owl:ObjectProperty rdf:about="shenli_scene1#inFrontOf">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#SpeakableRelation"/>
+        <rdfs:domain rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:range rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:label xml:lang="fr">devant</rdfs:label>
+        <rdfs:label xml:lang="en">in front of</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    
+
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- shenli_scene1#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="shenli_scene1#topDataProperty">
+    </owl:DatatypeProperty>
+
+
+
+
+    <!-- shenli_scene1#isLeftMost -->
+
+    <owl:DatatypeProperty rdf:about="shenli_scene1#isLeftMost">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
+
+    <!-- shenli_scene1#isRightMost -->
+
+    <owl:DatatypeProperty rdf:about="shenli_scene1#isRightMost">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- shenli_scene1#Agent -->
+
+    <owl:Class rdf:about="shenli_scene1#Agent">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Entity"/>
+        <owl:disjointWith rdf:resource="shenli_scene1#Object"/>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="fr">agent</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Area -->
+
+    <owl:Class rdf:about="shenli_scene1#Area">
+        <rdfs:label xml:lang="en">area</rdfs:label>
+        <rdfs:label xml:lang="fr">zone</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Bed -->
+
+    <owl:Class rdf:about="shenli_scene1#Bed">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="en">bed</rdfs:label>
+        <rdfs:label xml:lang="fr">lit</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Book -->
+
+    <owl:Class rdf:about="shenli_scene1#Book">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">book</rdfs:label>
+        <rdfs:label xml:lang="fr">livre</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Box -->
+
+    <owl:Class rdf:about="shenli_scene1#Box">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+	<rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+	<rdfs:subClassOf rdf:resource="shenli_scene1#Support"/>
+        <rdfs:label xml:lang="fr">boite</rdfs:label>
+        <rdfs:label xml:lang="en">box</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Can -->
+
+    <owl:Class rdf:about="shenli_scene1#Can">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#LiquidContainer"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">can</rdfs:label>
+        <rdfs:label xml:lang="fr">canette</rdfs:label>
+    </owl:Class>
+
+    <!-- shenli_scene1#Bottle -->
+
+    <owl:Class rdf:about="shenli_scene1#Bottle">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#LiquidContainer"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">bottle</rdfs:label>
+        <rdfs:label xml:lang="fr">bouteille</rdfs:label>
+    </owl:Class>
+
+
+    <!-- shenli_scene1#Ball -->
+
+    <owl:Class rdf:about="shenli_scene1#Ball">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Object"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">ball</rdfs:label>
+        <rdfs:label xml:lang="fr">balle</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Chair -->
+
+    <owl:Class rdf:about="shenli_scene1#Chair">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="en">chair</rdfs:label>
+        <rdfs:label xml:lang="fr">chaise</rdfs:label>
+    </owl:Class>
+
+    <!-- shenli_scene1#Couch -->
+
+    <owl:Class rdf:about="shenli_scene1#Couch">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="en">couch</rdfs:label>
+        <rdfs:label xml:lang="fr">canapé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- shenli_scene1#CoatHanger -->
+
+    <owl:Class rdf:about="shenli_scene1#CoatHanger">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="en">coat hanger</rdfs:label>
+        <rdfs:label xml:lang="fr">porte manteau</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Color -->
+
+    <owl:Class rdf:about="shenli_scene1#Color">
+        <rdfs:label xml:lang="en">color</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Container -->
+
+    <owl:Class rdf:about="shenli_scene1#Container">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Object"/>
+        <rdfs:label xml:lang="en">container</rdfs:label>
+        <rdfs:label xml:lang="fr">conteneur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Cube -->
+
+    <owl:Class rdf:about="shenli_scene1#Cube">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Support"/>
+        <owl:disjointWith rdf:resource="shenli_scene1#Mug"/>
+        <rdfs:label xml:lang="en">cube</rdfs:label>
+        <rdfs:label xml:lang="fr">cube</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Cup -->
+
+    <owl:Class rdf:about="shenli_scene1#Cup">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+        <rdfs:label xml:lang="en">cup</rdfs:label>
+        <rdfs:label xml:lang="fr">tasse</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Drawer -->
+
+    <owl:Class rdf:about="shenli_scene1#Drawer">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Support"/>
+        <rdfs:label xml:lang="en">drawer</rdfs:label>
+        <rdfs:label xml:lang="fr">tiroir</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Entity -->
+
+    <owl:Class rdf:about="shenli_scene1#Entity"/>
+
+
+
+    <!-- shenli_scene1#Fan -->
+
+    <owl:Class rdf:about="shenli_scene1#Fan">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="en">fan</rdfs:label>
+        <rdfs:label xml:lang="fr">ventilateur</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Furniture -->
+
+    <owl:Class rdf:about="shenli_scene1#Furniture">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Object"/>
+        <rdfs:label xml:lang="en">furniture</rdfs:label>
+        <rdfs:label xml:lang="fr">meuble</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Human -->
+
+    <owl:Class rdf:about="shenli_scene1#Human">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Agent"/>
+        <owl:disjointWith rdf:resource="shenli_scene1#Robot"/>
+        <rdfs:label xml:lang="fr">humain</rdfs:label>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+    </owl:Class>
+
+
+    <!-- shenli_scene1#Lamp -->
+
+    <owl:Class rdf:about="shenli_scene1#Lamp">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="fr">lampe</rdfs:label>
+        <rdfs:label xml:lang="en">lamp</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#LiquidContainer -->
+
+    <owl:Class rdf:about="shenli_scene1#LiquidContainer">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+    </owl:Class>
+
+    <!-- shenli_scene1#FoodContainer -->
+
+    <owl:Class rdf:about="shenli_scene1#FoodContainer">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+    </owl:Class>
+
+
+    <!-- shenli_scene1#Mug -->
+
+    <owl:Class rdf:about="shenli_scene1#Mug">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#LiquidContainer"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">mug</rdfs:label>
+        <rdfs:label xml:lang="fr">tasse</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Object -->
+
+    <owl:Class rdf:about="shenli_scene1#Object">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Entity"/>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+        <rdfs:label xml:lang="fr">objet</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Pickable -->
+
+    <owl:Class rdf:about="shenli_scene1#Pickable">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Object"/>
+    </owl:Class>
+
+
+    <!-- shenli_scene1#Pen -->
+    <owl:Class rdf:about="shenli_scene1#Pen">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Pickable"/>
+        <rdfs:label xml:lang="en">pen</rdfs:label>
+        <rdfs:label xml:lang="fr">stylo</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- shenli_scene1#Robot -->
+
+    <owl:Class rdf:about="shenli_scene1#Robot">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Agent"/>
+        <rdfs:label xml:lang="en">robot</rdfs:label>
+        <rdfs:label xml:lang="fr">robot</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Room -->
+
+    <owl:Class rdf:about="shenli_scene1#Room">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Area"/>
+        <rdfs:label xml:lang="en">room</rdfs:label>
+        <rdfs:label xml:lang="fr">salle</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Shape -->
+
+    <owl:Class rdf:about="shenli_scene1#Shape">
+        <rdfs:label xml:lang="fr">forme</rdfs:label>
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Shelf -->
+
+    <owl:Class rdf:about="shenli_scene1#Shelf">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Container"/>
+	<rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+	<rdfs:subClassOf rdf:resource="shenli_scene1#Support"/>
+        <rdfs:label xml:lang="fr">etagere</rdfs:label>
+        <rdfs:label xml:lang="en">shelf</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Size -->
+
+    <owl:Class rdf:about="shenli_scene1#Size">
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Spot -->
+
+    <owl:Class rdf:about="shenli_scene1#Spot">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Area"/>
+        <rdfs:label xml:lang="fr">endroit</rdfs:label>
+        <rdfs:label xml:lang="en">spot</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Support -->
+
+    <owl:Class rdf:about="shenli_scene1#Support">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Object"/>
+        <rdfs:label xml:lang="en">support</rdfs:label>
+        <rdfs:label xml:lang="fr">support</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#TV -->
+
+    <owl:Class rdf:about="shenli_scene1#TV">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:label xml:lang="fr">tele</rdfs:label>
+        <rdfs:label xml:lang="en">tv</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- shenli_scene1#Table -->
+
+    <owl:Class rdf:about="shenli_scene1#Table">
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Furniture"/>
+        <rdfs:subClassOf rdf:resource="shenli_scene1#Support"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- shenli_scene1#black -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#black">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+        <rdfs:label xml:lang="fr">noir</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#blue -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#blue">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+        <rdfs:label xml:lang="fr">bleu</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#bob -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#bob">
+        <rdf:type rdf:resource="shenli_scene1#Human"/>
+        <rdfs:label xml:lang="en">bob</rdfs:label>
+        <rdfs:label xml:lang="fr">bob</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#box -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#box">
+        <rdf:type rdf:resource="shenli_scene1#Shape"/>
+        <rdfs:label xml:lang="en">rectangular</rdfs:label>
+        <rdfs:label xml:lang="fr">rectangulaire</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#cyan -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cyan">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">light blue</rdfs:label>
+        <rdfs:label xml:lang="fr">bleu clair</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#green -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#green">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+        <rdfs:label xml:lang="fr">vert</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#grey -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#grey">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+        <rdfs:label xml:lang="fr">gris</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#large -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#large">
+        <rdf:type rdf:resource="shenli_scene1#Size"/>
+        <rdfs:label xml:lang="en">large</rdfs:label>
+        <rdfs:label xml:lang="fr">grand</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#magenta -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#magenta">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">pink</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#medium -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#medium">
+        <rdf:type rdf:resource="shenli_scene1#Size"/>
+    </owl:NamedIndividual>
+
+
+    <!-- shenli_scene1#orange -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#orange">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">orange</rdfs:label>
+        <rdfs:label xml:lang="fr">orange</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#pink -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#pink">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">pink</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#purple -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#purple">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">purple</rdfs:label>
+        <rdfs:label xml:lang="fr">violet</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#red -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#red">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+        <rdfs:label xml:lang="fr">rouge</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#beige -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#beige">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">beige</rdfs:label>
+        <rdfs:label xml:lang="fr">beige</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#round -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#round">
+        <rdf:type rdf:resource="shenli_scene1#Shape"/>
+        <rdfs:label xml:lang="en">circular</rdfs:label>
+        <rdfs:label xml:lang="fr">circulaire</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#small -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#small">
+        <rdf:type rdf:resource="shenli_scene1#Size"/>
+        <rdfs:label xml:lang="en">small</rdfs:label>
+        <rdfs:label xml:lang="fr">petit</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#white -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#white">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">white</rdfs:label>
+        <rdfs:label xml:lang="fr">blanc</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- shenli_scene1#wooden -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#wooden">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">wooden</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur bois</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- shenli_scene1#yellow -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#yellow">
+        <rdf:type rdf:resource="shenli_scene1#Color"/>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+        <rdfs:label xml:lang="fr">jaune</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube0 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube0">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#yellow"/>
+        <shenli_scene1:isLeftMost rdf:datatype="rdf#int">1</shenli_scene1:isLeftMost>
+        <shenli_scene1:isLeftMost rdf:datatype="rdf#int">4</shenli_scene1:isLeftMost>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube1 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube1">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube2 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube2">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+        <shenli_scene1:isLeftMost rdf:datatype="rdf#int">4</shenli_scene1:isLeftMost>
+        <shenli_scene1:inFrontOf rdf:resource="shenli_scene1#cube3"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube3 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube3">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+        <shenli_scene1:isLeftMost rdf:datatype="rdf#int">4</shenli_scene1:isLeftMost>
+        <shenli_scene1:behind rdf:resource="shenli_scene1#cube2"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube4 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube4">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube5 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube5">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+        <shenli_scene1:atLeftOf rdf:resource="shenli_scene1#cube8"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube6 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube6">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube7 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube7">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+        <shenli_scene1:isLeftMost rdf:datatype="rdf#int">4</shenli_scene1:isLeftMost>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube8 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube8">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#blue"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+        <shenli_scene1:atRightOf rdf:resource="shenli_scene1#cube5"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube9 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube9">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">5</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+        <shenli_scene1:inFrontOf rdf:resource="shenli_scene1#cube10"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube10 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube10">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#blue"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">5</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+        <shenli_scene1:behind rdf:resource="shenli_scene1#cube9"/>
+        <shenli_scene1:inFrontOf rdf:resource="shenli_scene1#cube11"/>
+        <shenli_scene1:inFrontOf rdf:resource="shenli_scene1#cube12"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube11 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube11">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">5</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+        <shenli_scene1:behind rdf:resource="shenli_scene1#cube10"/>
+        <shenli_scene1:inFrontOf rdf:resource="shenli_scene1#cube12"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube12 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube12">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">5</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+        <shenli_scene1:behind rdf:resource="shenli_scene1#cube10"/>
+        <shenli_scene1:behind rdf:resource="shenli_scene1#cube11"/>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube13 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube13">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#green"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">1</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">5</shenli_scene1:isRightMost>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+    </owl:NamedIndividual>
+
+    <!-- shenli_scene1#cube14 -->
+
+    <owl:NamedIndividual rdf:about="shenli_scene1#cube14">
+        <rdf:type rdf:resource="shenli_scene1#Cube"/>
+        <shenli_scene1:hasColor rdf:resource="shenli_scene1#orange"/>
+        <shenli_scene1:isRightMost rdf:datatype="rdf#int">7</shenli_scene1:isRightMost>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="shenli_scene1#Area"/>
+            <rdf:Description rdf:about="shenli_scene1#Color"/>
+            <rdf:Description rdf:about="shenli_scene1#Entity"/>
+            <rdf:Description rdf:about="shenli_scene1#Shape"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="shenli_scene1#Box"/>
+            <rdf:Description rdf:about="shenli_scene1#Cube"/>
+            <rdf:Description rdf:about="shenli_scene1#Mug"/>
+            <rdf:Description rdf:about="shenli_scene1#Can"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="shenli_scene1#Box"/>
+            <rdf:Description rdf:about="shenli_scene1#Drawer"/>
+            <rdf:Description rdf:about="shenli_scene1#Mug"/>
+            <rdf:Description rdf:about="shenli_scene1#Can"/>
+            <rdf:Description rdf:about="shenli_scene1#Shelf"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="shenli_scene1#Cube"/>
+            <rdf:Description rdf:about="shenli_scene1#Drawer"/>
+            <rdf:Description rdf:about="shenli_scene1#Table"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="shenli_scene1#Drawer"/>
+            <rdf:Description rdf:about="shenli_scene1#Fan"/>
+            <rdf:Description rdf:about="shenli_scene1#Shelf"/>
+            <rdf:Description rdf:about="shenli_scene1#TV"/>
+            <rdf:Description rdf:about="shenli_scene1#Table"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->

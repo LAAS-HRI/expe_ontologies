@@ -1,0 +1,13 @@
+<launch>
+  <arg name="language" default="en"/>
+  <arg name="intern_file" default="none"/>
+  <arg name="files" default="
+    $(find expe_ontologies)/experimentations/roman_paper/ShenLiScene1.owl
+    "/>
+
+  <node name="ontologenius_core" pkg="ontologenius" type="ontologenius_multi" output="screen" args="-l $(arg language) -i $(arg intern_file) $(arg files)"> </node>
+  <node name="ontologenius_rest" pkg="ontologenius" type="REST.py" output="screen"> </node>
+  <node name="ontologenius_gui" pkg="ontologenius" type="ontoloGUI" output="screen"> </node>
+
+  <node name="ontologenius_query" pkg="ontologenius_query" type="ontologenius_query_multi" output="screen"> </node>
+</launch>
