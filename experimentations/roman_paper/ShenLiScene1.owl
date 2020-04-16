@@ -94,7 +94,7 @@
 
 
 
-    
+
 
 
 
@@ -117,11 +117,24 @@
 
 
 
+    <!-- shenli_scene1#VisualRelation -->
+
+    <owl:DatatypeProperty rdf:about="shenli_scene1#VisualRelation">
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+    <!-- expe_ontologies#GeometricalRelation -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#GeometricalRelation">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
+    </owl:DatatypeProperty>
+
+
+
 
     <!-- shenli_scene1#isLeftMost -->
 
     <owl:DatatypeProperty rdf:about="shenli_scene1#isLeftMost">
-        <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
         <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
     </owl:DatatypeProperty>
 
@@ -131,7 +144,6 @@
     <!-- shenli_scene1#isRightMost -->
 
     <owl:DatatypeProperty rdf:about="shenli_scene1#isRightMost">
-        <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
         <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
     </owl:DatatypeProperty>
 
