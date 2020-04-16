@@ -32,6 +32,12 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
 
+    <!-- expe_ontologies#GeometricalRelation -->
+
+    <owl:ObjectProperty rdf:about="expe_ontologies#GeometricalRelation">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#VisualRelation"/>
+    </owl:ObjectProperty>
+
     <!-- shenli_scene1#hasColor -->
 
     <owl:ObjectProperty rdf:about="shenli_scene1#hasColor">
@@ -116,6 +122,7 @@
 
     <owl:DatatypeProperty rdf:about="shenli_scene1#isLeftMost">
         <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
     </owl:DatatypeProperty>
 
 
@@ -125,6 +132,7 @@
 
     <owl:DatatypeProperty rdf:about="shenli_scene1#isRightMost">
         <rdfs:subPropertyOf rdf:resource="shenli_scene1#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="shenli_scene1#GeometricalRelation"/>
     </owl:DatatypeProperty>
 
 
