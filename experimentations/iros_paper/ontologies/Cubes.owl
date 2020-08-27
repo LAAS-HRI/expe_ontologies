@@ -199,6 +199,7 @@
        <rdf:type rdf:resource="expe_ontologies#RedCube"/>
        <expe_ontologies:hasColor rdf:resource="expe_ontologies#red"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">260</objects:hasArId>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">190</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
        <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#white_storage"/>
@@ -213,6 +214,7 @@
        <rdf:type rdf:resource="expe_ontologies#GreenCube"/>
        <expe_ontologies:hasColor rdf:resource="expe_ontologies#green"/>
        <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">266</objects:hasArId>
+       <objects:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">196</objects:hasArId>
        <objects:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</objects:hasText>
        <expe_ontologies:isOnTopOf rdf:resource="expe_ontologies#table_l_0"/>
        <expe_ontologies:isInStorageArea rdf:resource="expe_ontologies#white_storage"/>
